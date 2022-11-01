@@ -97,7 +97,7 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             SizedBox(
-              height: 66,
+              height: 20,
             ),
             ElevatedButton(
               onPressed: () {},
@@ -111,7 +111,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(
-              height: 17,
+              height: 5,
             ),
             TextButton(
               onPressed: () {},
@@ -133,14 +133,14 @@ class _LoginPageState extends State<LoginPage> {
             OutlinedButton(
               onPressed: () {}, //signInWithGoogle,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Image.asset(
-                    'assets/icon/google_logo_icon.png',
+                    'assets/google_logo_icon.png',
                     width: 20,
                   ),
                   Text(
-                    "  Sign in with Google",
+                    "구글 로그인 하기",
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -149,9 +149,34 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
               style: OutlinedButton.styleFrom(
-                padding: EdgeInsets.symmetric(vertical: 20),
-                shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                // padding: EdgeInsets.symmetric(vertical: 20),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {}, //signInWithGoogle,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Image.asset(
+                    'assets/google_logo_icon.png',
+                    width: 20,
+                  ),
+                  Text(
+                    "익명 로그인 하기",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              style: OutlinedButton.styleFrom(
+                // padding: EdgeInsets.symmetric(vertical: 20),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
                 ),
               ),
             ),
