@@ -122,11 +122,37 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            SizedBox(height: 62),
+            SizedBox(height: 20),
             Text(
               '간단하게 SNS 회원가입',
               style: TextStyle(
                 fontSize: 14,
+              ),
+            ),
+            SizedBox(height: 18,),
+            OutlinedButton(
+              onPressed: () {}, //signInWithGoogle,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/icon/google_logo_icon.png',
+                    width: 20,
+                  ),
+                  Text(
+                    "  Sign in with Google",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              style: OutlinedButton.styleFrom(
+                padding: EdgeInsets.symmetric(vertical: 20),
+                shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
               ),
             ),
           ],
